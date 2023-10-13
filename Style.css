@@ -1,0 +1,208 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600&family=Josefin+Sans:wght@500&family=Mina:wght@400;700&display=swap');
+
+:root{
+    --background-dark: #2F1893;
+    --action: #E93A7D;
+    --white:white;
+    --socialTwitter:#1DA1F2;
+    --spanSign:#25DAC5;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+body{
+    background-color: var(--background-dark);
+    /* height: 100vh; */
+}
+
+.Mainsection{
+    /* height: 100%; */
+    width: 100%;
+    padding: 3rem 10rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.navlinks{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    width: 100%;
+}
+.navlinks p{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+.navlinks ul{
+    width:50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+
+.navlinks ul li{
+    list-style: none;
+}
+.navlinks a{
+    text-decoration: none;
+    color: var(--white)
+}
+
+.navlinks button{
+    /* width: 120px;
+    height: 40px; */
+    padding:.7rem 2rem ;
+    background-color: var(--action);
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+}
+
+.section2{
+    margin-top:4.5rem;
+    display: flex;
+    /* background-color: #4e484b; */
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--white);
+    justify-content: space-between;
+
+
+}
+.section2_left{
+    /* background-color: rgb(139, 169, 159); */
+    display: flex;
+    flex-direction: column;
+    height: 496px;
+    width: 427px;
+    justify-content: space-around;
+    
+}
+
+
+.section2_left p:first-child{
+    font-size: 58px;
+    font-weight: 700;
+    
+}
+.section2_left p:nth-child(2){
+    font-size: 22px;
+    margin-top: 1rem;
+    width: 363px;
+    line-height: 32px;
+}
+.section2_left button{
+    align-self: flex-start;
+    padding:.7rem 2rem ;
+    background-color: var(--action);
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+   
+}
+
+.section2_right{
+    background-color: rgb(255, 255, 255);
+    height:100%;
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: black;
+
+    
+    /* justify-content: center; */
+    
+}
+
+.section2_right p:first-child{
+    font-size: 42px;
+    color: black;
+    font-weight: 600;
+
+}
+.section2_right form{
+    padding: 2rem 0;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: aqua; */
+    /* padding: 2rem 0; */
+
+
+}
+.section2_right form .Or{
+    display: flex;
+    /* background-color: aqua; */
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2_right .Or::after,.Or::before{
+    content: "";
+  display: inline-block;
+  width: 20%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+
+.section2_right .Or::after{
+    margin: 0 -55% 0 .5em;
+}
+
+.section2_right button{
+    align-self: flex-start;
+    padding:.7rem 2rem ;
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+    width: 80%;
+    align-self: center;
+
+}
+.section2_right_form .Signin{
+    background-color: var(--background-dark);
+}
+.section2_right_form .Login{
+    background-color: var(--socialTwitter);
+}
+.section2_right_form .S{
+    color:var(--spanSign);
+}
+
+
+.section2_right_form input[type='text']{
+    align-self: flex-start;
+    padding:.7rem 2rem ;
+       border-style: solid;
+    border-color: #EBEAED ;
+    border-radius: 50px;
+    width: 80%;
+    align-self: center;
+    outline: none;
+    font-size: 1rem;
+    
+    
+}
